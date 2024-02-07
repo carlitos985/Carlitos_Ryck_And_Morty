@@ -1,0 +1,63 @@
+.resident{
+    background-color: #072226;
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+.resident:hover{
+    transform: scale(1.1);
+    transition: transform .5s;
+   
+}
+.resident_photo{
+    position: relative;
+}
+.resident_status{
+    position: absolute;
+    background-color: #072226;
+    top: 10%;
+    padding: 5px 10px ;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   
+}
+.resident_circle{
+    width: 15px;
+    /*aspect-ratio es para que tenga lo mismo de ancho que de alto*/
+    aspect-ratio: 1;
+    background-color: grey;
+    border-radius: 50%;
+    
+}
+.Alive{
+    background-color: #7AB824;
+}
+.Dead{
+    background-color: red;
+}
+.resident_name{
+    text-align: center;
+    margin: 15px 0;
+}
+.resident hr{
+    border: 1px solid rgba(128, 128, 128, 0.301);
+    width: 85%;
+    margin: 0 auto;
+}
+.resident_list{
+    padding: 15px;
+    
+}
+.resident_item{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+.resident_item span:first-child{
+    padding-left: 20px;
+    color: gray;
+}
